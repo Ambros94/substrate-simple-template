@@ -1,6 +1,6 @@
 # Substrate Simple Template
 
-A simple template to bootstrap a Substrate node with BABE([Nominated Proof of Stake](https://substrate.dev/docs/en/knowledgebase/advanced/consensus#babe)) consensus
+A simple template to bootstrap a Substrate node with BABE ([Nominated Proof of Stake](https://substrate.dev/docs/en/knowledgebase/advanced/consensus#babe)) consensus
 
 ## Getting Started
 
@@ -17,23 +17,6 @@ rustup default nightly-2021-03-01
 rustup target add wasm32-unknown-unknown --toolchain nightly-2021-03-01
 ```
 
-### Run
-
-Use Rust's native `cargo` command to build and launch the template node:
-
-```bash
-cargo run --release -- --dev --tmp
-```
-
-### Build
-
-The `cargo run` command will perform an initial build. Use the following command to build the node
-without launching it:
-
-```bash
-cargo build --release
-```
-
 ### Embedded Docs
 
 Once the project has been built, the following command can be used to explore all parameters and
@@ -44,10 +27,6 @@ subcommands:
 ```
 
 ## Run
-
-The provided `cargo run` command will launch a temporary node and its state will be discarded after
-you terminate the process. After the project has been built, there are other ways to launch the
-node.
 
 ### Single-Node Development Chain
 
