@@ -28,6 +28,15 @@ subcommands:
 
 ## Run
 
+### Clone and build the node template
+
+```
+git clone https://github.com/Ambros94/substrate-simple-template.git
+cd substrate-simple-template
+cargo build --release
+# ^^ this will take a while!
+```
+
 ### Single-Node Development Chain
 
 This command will start the single-node development chain with persistent state:
@@ -54,6 +63,11 @@ Once the node template is running locally, you can connect it with **Polkadot-JS
 to interact with your chain. [Click here](https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944) connecting the Apps to your local node template.
 
 ### Multi-Node Testnet
+
+Before everything else, t's time to generate our own keys rather than using the well-known keys included in the staging testnet. Each person who wants to participate in the blockchain should generate their own keys. 
+There are multiple ways to generate the keys, here we will refer to the 
+
+For an overview regarding all the metodologies go [here](https://substrate.dev/docs/en/tutorials/start-a-private-network/keygen)
 
 #### Generate node key
 
