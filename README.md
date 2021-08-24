@@ -65,9 +65,26 @@ to interact with your chain. [Click here](https://polkadot.js.org/apps/#/explore
 ### Multi-Node Testnet
 
 Before everything else, t's time to generate our own keys rather than using the well-known keys included in the staging testnet. Each person who wants to participate in the blockchain should generate their own keys. 
-There are multiple ways to generate the keys, here we will refer to the 
+There are multiple ways to generate the keys, here we will refer to the usage of `subkey`. Information about its installation can be found [here](https://substrate.dev/docs/en/knowledgebase/integrate/subkey)
 
 For an overview regarding all the metodologies go [here](https://substrate.dev/docs/en/tutorials/start-a-private-network/keygen)
+
+
+Generate a mnemonic and see the sr25519 key and address associated with it. This key will be used by Aura for block production.
+
+_Command_
+```bash
+subkey generate --scheme sr25519
+```
+
+_Output_
+```bash
+Secret phrase `some words that you should keep secret do not use those please` is account:
+  Secret seed:      0xa2b0200f9666b743402289ca4f7e79c9a4a52ce129365578521b0b75396bd242
+  Public key (hex): 0x0a11c9bcc81f8bd314e80bc51cbfacf30eaeb57e863196a79cccdc8bf4750d21
+  Account ID:       0x0a11c9bcc81f8bd314e80bc51cbfacf30eaeb57e863196a79cccdc8bf4750d21
+  SS58 Address:     5CHucvTwrPg8L2tjneVoemApqXcUaEdUDsCEPyE7aDwrtR8D
+```
 
 #### Generate node key
 
