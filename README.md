@@ -86,6 +86,25 @@ Secret phrase `some words that you should keep secret do not use those please` i
   SS58 Address:     5CHucvTwrPg8L2tjneVoemApqXcUaEdUDsCEPyE7aDwrtR8D
 ```
 
+Now see the ed25519 key and address associated with the same mnemonic. This key will be used by GRANDPA for block finalization. 
+
+
+_Command_
+```bash
+# subkey command
+subkey inspect --scheme ed25519 "some words that you should keep secret do not use those please"
+```
+
+_Output_
+```bash
+# subkey output
+Secret phrase `infant salmon buzz patrol maple subject turtle cute legend song vital leisure` is account:
+  Secret seed:      0xa2b0200f9666b743402289ca4f7e79c9a4a52ce129365578521b0b75396bd242
+  Public key (hex): 0x1a0e2bf1e0195a1f5396c5fd209a620a48fe90f6f336d89c89405a0183a857a3
+  Account ID:       0x1a0e2bf1e0195a1f5396c5fd209a620a48fe90f6f336d89c89405a0183a857a3
+  SS58 Address:     5CesK3uTmn4NGfD3oyGBd1jrp4EfRyYdtqL3ERe9SXv8jUHb
+```
+
 #### Generate node key
 
 Generate pubic key from a secret phrase. This secret phrase is dedicated to development and should not be used in any other places.
