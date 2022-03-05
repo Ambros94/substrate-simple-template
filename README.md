@@ -68,3 +68,24 @@ You should see the chain that finalised blocks
 
 # Install a frontend and interact with the chain
 
+Make sure you have Nodejs v14 and yarn installed
+```bash
+nvm install 14
+nvm use 14
+npm install -g yarn
+```
+
+Download the repositories and install its dependencies
+
+```bash
+git clone https://github.com/Ambros94/substrate-front-end-template.git
+cd substrate-front-end-template
+yarn install
+```
+
+Start the frontend and 
+```bash
+yarn start
+```
+
+Open google chrome on localhost:8000 and start interacting with the chain
